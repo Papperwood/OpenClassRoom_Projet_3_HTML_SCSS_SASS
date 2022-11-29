@@ -114,9 +114,41 @@ header
   height: 70px;
   background-color: white;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   cursor: pointer;
   border-radius: 10px;
   margin-bottom: 10px;
+  animation: slideup 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slideup
+{
+  0%
+  {
+    transform: translatey(20px);
+    opacity: 0%;
+  }
+  100%
+  {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
+
+.slideup-0
+{
+    animation-delay: 0ms;
+}
+
+.slideup-1
+{
+    animation-delay: 300ms;
+}
+
+.slideup-2
+{
+    animation-delay: 600ms;
 }
 
 .price
@@ -261,4 +293,4 @@ footer p {
   .footer_2 {
     margin-right: 20px;
   }
-}
+} 

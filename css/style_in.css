@@ -121,9 +121,49 @@ header {
   height: 70px;
   background-color: white;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   cursor: pointer;
   border-radius: 10px;
   margin-bottom: 10px;
+  -webkit-animation: slideup 1s forwards;
+          animation: slideup 1s forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    transform: translatey(20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translatey(20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
+.slideup-0 {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.slideup-1 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.slideup-2 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .price {
