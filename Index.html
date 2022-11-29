@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="images/site.webmanifest">
+        <script src="https://kit.fontawesome.com/2e5a4f9352.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -24,7 +25,7 @@
             </div>
             <div class="localisateur">
                 <div>
-                    <img src="images/localisateur.png" width="25" height="25"/>
+                    <img src="images/localisateur.png" class="localisation" alt="img"/>
                 </div>
                 <div class="searchbar">
                     <input id="searchbar_in" type="text" name="search" placeholder="Paris, Belleville">
@@ -43,38 +44,38 @@
             </div>
         </section>
         <section class="section_2">
-            <div class="none">
+            <div class="none first-title">
                 <h2>Fontionnement</h2>
             </div>
             <article class="section_2_in">
                 <div class="number">1</div>
-                <div><img src="images/iphone.png" /></div>
+                <div><img src="images/iphone.png" alt="img"/></div>
                 <div><h3 class="">Choisissez un restaurant</h3></div>
             </article>
             <article class="section_2_in">
                 <div class="number">2</div>
-                <div><img src="images/liste.png" /></div>
+                <div><img src="images/liste.png" alt="img"/></div>
                 <div><h3 class="">Composez votre menu</h3></div>
             </article>
             <article class="section_2_in">
                 <div class="number">3</div>
-                <div><img src="images/aire-de-restauration.png" /></div>
+                <div><img src="images/aire-de-restauration.png" alt="img"/></div>
                 <div><h3 class="">Dégustez au restaurant</h3></div>
             </article>
         </section>
         <section class="restaurants">
-            <div class="none">
+            <div class="none second-title">
                 <h2>Restaurants</h2>
             </div>
             <div class="carte_restaurants">
                 <a class="lien" href="la_palette_du_gout.html"> <!-- liens -->
                 <div class="carte_1">
-                    <img class="img_cartes" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" />
+                    <img class="img_cartes" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="img"/>
                     <p class="nouveau">Nouveau</p>
                 </div>
                 <div class="carte_2">
                     <div >
-                        <p>La palette du goût</p>
+                        <p><b>La palette du goût</b></p>
                         <p>Ménilmontant</p>
                     </div>
                     <div class="heart">
@@ -91,55 +92,76 @@
             <div class="carte_restaurants">
                 <a class="lien" href="La_note_enchantée.html">                
                 <div class="carte_1"> 
-                    <img class="img_cartes" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" />
+                    <img class="img_cartes" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="img"/>
                     <p class="nouveau">Nouveau</p>
                 </div>
                 <div class="carte_2">
                     <div>
-                        <p>La note enchantée</p>
+                        <p><b>La note enchantée</b></p>
                         <p>Charonne</p>
                     </div>
-                    <div><img src="images/coeur.png" /></div>
+                    <div class="heart">
+                        <div class="empty">
+                            <span class="material-icons-outlined">favorite_border</span>
+                        </div>
+                        <div class="full">
+                            <span class="material-icons-outlined">favorite</span>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
             <div class="carte_restaurants">
                 <a class="lien" href="A_la_francaise.html">                
                 <div class="carte_1">
-                    <img class="img_cartes" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" />
+                    <img class="img_cartes" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="img"/>
                 </div>
                 <div class="carte_2">
                     <div>
-                        <p>A la francaise</p>
+                        <p><b>A la francaise</b></p>
                         <p>Cité rouge</p>
                     </div>
-                    <div><img src="images/coeur.png" /></div>
+                    <div class="heart">
+                        <div class="empty">
+                            <span class="material-icons-outlined">favorite_border</span>
+                        </div>
+                        <div class="full">
+                            <span class="material-icons-outlined">favorite</span>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
             <div class="carte_restaurants">
                 <a class="lien" href="Le_délice_des_sens.html">                
                 <div class="carte_1">
-                    <img class="img_cartes" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" />
+                    <img class="img_cartes" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="img"/>
                 </div>
                 <div class="carte_2">
                     <div>
-                        <p>Le délice des sens</p>
+                        <p><b>Le délice des sens</b></p>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <div><img src="images/coeur.png" /></div>
+                    <div class="heart">
+                        <div class="empty">
+                            <span class="material-icons-outlined">favorite_border</span>
+                        </div>
+                        <div class="full">
+                            <span class="material-icons-outlined">favorite</span>
+                        </div>
+                    </div>
                 </div>
                 </a>
             </div>
         </section>
-        <footer> <!-- bas complet -->
-            <div> <!-- title -->
+        <footer> 
+            <div> 
                 <p class="title">ohmyfood</p>
             </div>
-            <div class="footer_1"> <!-- les 4 possibilités -->
+            <div class="footer_1"> 
                 <div class="footer_2">
                     <div class="footer_logo">
-                        <img src="images/cuillere.png" width="20" height="20"/>
+                        <img src="images/cuillere.png" class="icone-footer" alt="img"/>
                     </div>
                     <div>
                         <p>Proposer un restaurant</p>
@@ -147,7 +169,7 @@
                 </div>
                 <div class="footer_2">
                     <div class="footer_logo">
-                        <img src="images/poignee-de-main.png" width="20" height="20"/>
+                        <img src="images/poignee-de-main.png" class="icone-footer" alt="img"/>
                     </div>
                     <div>
                         <p>Devenir partenaire</p>

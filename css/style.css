@@ -3,6 +3,16 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
+}
+
+input {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h1 h2 h3 {
+  font-family: "Shrikhand", cursive;
 }
 
 .lien {
@@ -14,6 +24,16 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+.localisation {
+  height: 25px;
+  width: 25px;
+}
+
+.icone-footer {
+  width: 20px;
+  height: 20px;
+}
+
 .logo {
   text-align: center;
   margin-bottom: 4px;
@@ -21,8 +41,8 @@ body {
 }
 
 #logo_dim {
-  width: 300px;
-  height: 50px;
+  width: 200px;
+  height: 30px;
 }
 
 .localisateur {
@@ -51,8 +71,8 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .section_1_in {
@@ -81,9 +101,17 @@ body {
 .section_2 {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.first-title {
+  margin-left: -175px;
+}
+
+.second-title {
+  margin-left: -210px;
 }
 
 .section_2_in {
@@ -101,8 +129,8 @@ body {
 
 .number {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: white;
   background: rgba(92, 1, 205, 0.4470588235);
   border-radius: 20px;
@@ -116,10 +144,11 @@ body {
 
 .restaurants {
   background: rgb(232, 231, 231);
-  padding-left: 20px;
   padding-bottom: 100px;
   align-items: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .carte_restaurants {
@@ -152,6 +181,7 @@ body {
 .heart .full {
   display: none;
 }
+
 .heart .empty {
   display: block;
 }
@@ -162,9 +192,11 @@ body {
   color: transparent;
   cursor: pointer;
 }
+
 .heart:hover .full {
   display: block;
 }
+
 .heart:hover .empty {
   display: none;
 }
@@ -173,8 +205,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 20px;
+  width: 80px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 3px;
   background: #a9e0d1;
   color: #3b8468;
   position: absolute;
@@ -184,7 +218,7 @@ body {
   width: 350px;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -230,8 +264,8 @@ footer p {
   .logo {
     width: 500px;
     height: 200px;
-    display: flex;
     text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 4px;
@@ -266,9 +300,9 @@ footer p {
   }
   .section_1 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     background-color: whitesmoke;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -316,8 +350,8 @@ footer p {
   }
   .number {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: white;
     background: rgba(92, 1, 205, 0.4470588235);
     border-radius: 20px;
@@ -336,6 +370,7 @@ footer p {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
   }
   .none {
@@ -367,10 +402,12 @@ footer p {
   }
   .nouveau {
     display: flex;
-    justify-content: flex-end;
-    width: 70px;
-    height: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 25px;
     margin-right: 10px;
+    border-radius: 3px;
     background: #a9e0d1;
     color: #3b8468;
     position: absolute;
@@ -379,7 +416,7 @@ footer p {
     width: 350px;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -406,9 +443,9 @@ footer p {
     width: 500px;
     height: 200px;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 4px;
     margin-left: 50px;
     box-shadow: none;
@@ -439,9 +476,9 @@ footer p {
   }
   .section_1 {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
     background-color: whitesmoke;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -489,8 +526,8 @@ footer p {
   }
   .number {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     color: white;
     background: rgba(92, 1, 205, 0.4470588235);
     border-radius: 20px;
@@ -508,6 +545,7 @@ footer p {
     align-items: center;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
   .none {
@@ -551,7 +589,7 @@ footer p {
     width: 350px;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -562,4 +600,4 @@ footer p {
   .footer_2 {
     margin-right: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
