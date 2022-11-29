@@ -182,24 +182,31 @@ body {
     gap: 70px;
   }
   
-  .heart .full {
-    display: none;
+  .heart
+  {
+      & .full{
+          transform: translateY(-28px) scale(0);
+          background: -webkit-linear-gradient($primary, $secondary);
+          -webkit-background-clip: text;
+          color:transparent;
+          transition: 0.4s linear;
+          opacity: 0;
+      }
+      & .empty{
+          transform: scale(1);
+          transition: 0.4s linear;
+      }
   }
-  .heart .empty {
-    display: block;
-  }
-  
-  .heart:hover {
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    color: transparent;
-    cursor: pointer;
-  }
-  .heart:hover .full {
-    display: block;
-  }
-  .heart:hover .empty {
-    display: none;
+  .heart:hover
+  {
+      cursor: pointer;
+      & .full{
+          transform: translateY(-28px) scale(1);
+          opacity: 1;
+      }
+      & .empty{
+        transform: scale(0.95);
+      }
   }
   
   .nouveau {
