@@ -1,0 +1,17 @@
+$background-color: #E6E6E6;
+$box-shadow_section:  rgb(50 50 93 / 0%) 0px 5px 20px 0px,
+rgb(0 0 0 / 30%) -1px 5px 30px -10px;
+$box-shadow_button: rgba(43, 43, 44, 0.311) 0px 8px 24px;
+$border_radius_button: 30px;
+$primary: #9356DC;
+$secondary: #FF79DA; 
+@mixin card_style_button {
+    box-shadow: $box-shadow_button;
+    border-radius: $border_radius_button;
+}
+@mixin center 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -65,26 +65,27 @@ header {
 }
 
 .heart .full {
-  display: none;
-}
-
-.heart .empty {
-  display: block;
-}
-
-.heart:hover {
+  transform: translateY(-28px) scale(0);
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   color: transparent;
+  transition: 0.4s linear;
+  opacity: 0;
+}
+.heart .empty {
+  transform: scale(1);
+  transition: 0.4s linear;
+}
+
+.heart:hover {
   cursor: pointer;
 }
-
 .heart:hover .full {
-  display: block;
+  transform: translateY(-28px) scale(1);
+  opacity: 1;
 }
-
 .heart:hover .empty {
-  display: none;
+  transform: scale(0.95);
 }
 
 .liste_menu {
