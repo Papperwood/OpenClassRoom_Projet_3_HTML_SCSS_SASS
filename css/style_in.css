@@ -190,6 +190,20 @@ header {
   margin-top: 0px;
 }
 
+.validation
+{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  background-color: #99E2D0;
+}
+
+.fa-circle-check
+{
+  color: white;
+}
+
 .button {
   color: white;
   padding: 20px;
