@@ -236,6 +236,8 @@ footer {
   align-items: center;
   height: 35px;
   margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 3px;
   cursor: pointer;
 }
 
@@ -246,6 +248,11 @@ footer {
 
 .footer_logo {
   padding-right: 10px;
+}
+
+.decorationlien {
+  text-decoration: none;
+  color: white;
 }
 
 footer p {
