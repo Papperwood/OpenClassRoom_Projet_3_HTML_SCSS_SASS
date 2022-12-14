@@ -234,6 +234,7 @@ header {
 }
 
 .button {
+  border: 1px;
   color: white;
   padding: 20px;
   text-align: center;
