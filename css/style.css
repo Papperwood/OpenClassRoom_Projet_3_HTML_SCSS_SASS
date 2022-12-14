@@ -122,8 +122,8 @@ h1 h2 h3 {
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
   border-radius: 20px;
   position: relative;
+  width: 330px;
   gap: 2rem;
-  width: 350px;
   height: 70px;
 }
 
@@ -136,6 +136,7 @@ h1 h2 h3 {
   border-radius: 20px;
   width: 30px;
   height: 30px;
+  margin-left: -15px;
 }
 
 .section_2_in:hover {
