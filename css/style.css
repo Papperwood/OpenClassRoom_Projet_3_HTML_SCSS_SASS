@@ -11,8 +11,9 @@ input {
   font-size: 14px;
 }
 
-h1 h2 h3 {
+h1 h2 h3 h4 {
   font-family: "Shrikhand", cursive;
+  margin-bottom: 0px;
 }
 
 .lien {
@@ -163,7 +164,7 @@ h1 h2 h3 {
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 
@@ -233,6 +234,7 @@ footer {
   background-color: #353535;
   padding: 20px;
   margin-bottom: 0%;
+  margin-top: -60px;
 }
 
 .footer_2 {
@@ -396,7 +398,7 @@ footer p {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     cursor: pointer;
   }
   .carte_1 {
@@ -571,7 +573,7 @@ footer p {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     cursor: pointer;
   }
   .carte_1 {
@@ -590,10 +592,12 @@ footer p {
   }
   .nouveau {
     display: flex;
-    justify-content: flex-end;
-    width: 70px;
-    height: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 25px;
     margin-right: 10px;
+    border-radius: 3px;
     background: #a9e0d1;
     color: #3b8468;
     position: absolute;
