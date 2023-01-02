@@ -113,7 +113,7 @@ header {
 }
 
 .title_entrées {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   height: 18px;
   width: 60px;
 }
@@ -203,7 +203,7 @@ header {
   align-items: center;
   width: 0px;
   font-size: 22px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: white;
   transform: translateX(60px);
   transition: 0.3s linear;

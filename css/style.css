@@ -1,3 +1,25 @@
+html {
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -17,22 +39,66 @@ h1 h2 h3 h4 {
 }
 
 .loader {
-  z-index: 100;
-  width: 40px;
-  height: 98px;
-  display: inline-block;
   position: relative;
-  border: 2px solid #FFF;
-  box-sizing: border-box;
-  color: rgba(255, 61, 0, 0.9);
-  border-radius: 20px 20px 4px 4px;
-  background: #fff;
-  -webkit-animation: fadeout 0.2s 3s forwards;
-          animation: fadeout 0.2s 3s forwards;
-  -webkit-animation: fill 2s linear infinite alternate;
-          animation: fill 2s linear infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 10rem;
+  border: 1px solid white;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  box-shadow: 0px 0px 100px -50px black;
+  -webkit-animation: animate 1s linear infinite, fadeout 4s;
+          animation: animate 1s linear infinite, fadeout 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes fadeout {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 10rem;
+  border: 3px solid white;
+  box-shadow: inset 0px 0px 100px -70px #111;
+}
+
+@-webkit-keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .lien {
   text-decoration: none;
   color: black;
@@ -67,7 +133,7 @@ h1 h2 h3 h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 
 .searchbar {

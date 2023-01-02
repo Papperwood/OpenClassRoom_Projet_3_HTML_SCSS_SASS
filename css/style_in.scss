@@ -7,14 +7,12 @@ body {
   margin-right: auto;
   margin-bottom: 0px;
 }
-h1
-{
+h1 {
   font-size: 25px;
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: 400;
 }
-header 
-{
+header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -53,8 +51,7 @@ header
 .photo_section {
   width: 100%;
 }
-.first-title
-{
+.first-title {
   font-weight: 900;
   font-size: 30px;
   font-style: italic;
@@ -62,35 +59,32 @@ header
   width: auto;
 }
 
-.heart
-{
-    & .full{
-        transform: translateY(-28px) scale(0);
-        background: -webkit-linear-gradient($primary, $secondary);
-        -webkit-background-clip: text;
-        color:transparent;
-        transition: 0.4s linear;
-        opacity: 0;
-    }
-    & .empty{
-        transform: scale(1);
-        transition: 0.4s linear;
-    }
+.heart {
+  & .full {
+    transform: translateY(-28px) scale(0);
+    background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.4s linear;
+    opacity: 0;
+  }
+  & .empty {
+    transform: scale(1);
+    transition: 0.4s linear;
+  }
 }
-.heart:hover
-{
-    cursor: pointer;
-    & .full{
-        transform: translateY(-28px) scale(1);
-        opacity: 1;
-    }
-    & .empty{
-      transform: scale(0.95);
-    }
+.heart:hover {
+  cursor: pointer;
+  & .full {
+    transform: translateY(-28px) scale(1);
+    opacity: 1;
+  }
+  & .empty {
+    transform: scale(0.95);
+  }
 }
 
-.Menu
-{
+.Menu {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -115,12 +109,12 @@ header
 }
 
 .title_entrées {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   height: 18px;
   width: 60px;
 }
 
-.Menu-barre{
+.Menu-barre {
   display: flex;
   width: 100%;
   height: 70px;
@@ -132,25 +126,20 @@ header
   margin-bottom: 10px;
   animation: slideup 1s forwards;
   opacity: 0;
-  &:hover
-  {
-    & .Menu-info
-    {
+  &:hover {
+    & .Menu-info {
       width: calc(100% - 120px);
       transition: 0.3s linear;
     }
-    & .price
-    {
+    & .price {
       transform: translateX(0px);
       transition: 0.3s linear;
     }
-    & .validation
-    {
+    & .validation {
       min-width: 60px;
       transform: translateX(0px);
       transition: 0.3s linear;
-      & i
-      {
+      & i {
         transform: rotate(360deg);
         transition: 0.4s linear;
       }
@@ -158,37 +147,30 @@ header
   }
 }
 
-@keyframes slideup
-{
-  0%
-  {
+@keyframes slideup {
+  0% {
     transform: translatey(20px);
     opacity: 0%;
   }
-  100%
-  {
+  100% {
     transform: translatey(0px);
     opacity: 100%;
   }
 }
 
-.slideup-0
-{
-    animation-delay: 0ms;
+.slideup-0 {
+  animation-delay: 0ms;
 }
 
-.slideup-1
-{
-    animation-delay: 300ms;
+.slideup-1 {
+  animation-delay: 300ms;
 }
 
-.slideup-2
-{
-    animation-delay: 600ms;
+.slideup-2 {
+  animation-delay: 600ms;
 }
 
-.price
-{
+.price {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -199,43 +181,38 @@ header
   transition: 0.3s linear;
 }
 
-.validation
-{ 
+.validation {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 0px;
   font-size: 22px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: white;
   transform: translateX(60px);
   transition: 0.3s linear;
-  & i
-  {
+  & i {
     transform: rotate(0deg);
     transition: 0.4s linear;
   }
 }
 
-.Menu-info{
+.Menu-info {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   width: calc(100% - 60px);
   margin-left: 8px;
-  & p
-    {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; 
-    }
+  & p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
-.text-1
-{
+.text-1 {
   margin-bottom: 0px;
 }
-.text-2
-{
+.text-2 {
   margin-top: 0px;
 }
 
@@ -303,7 +280,7 @@ footer p {
     width: 100%;
     height: 500px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .liste_menu {
     background-color: #f6f6f6;
@@ -339,7 +316,7 @@ footer p {
     gap: 580px;
     padding-left: 10px;
   }
-  .Menu-barre{
+  .Menu-barre {
     max-width: 320px;
     min-width: 320px;
   }
@@ -347,7 +324,7 @@ footer p {
     width: 100%;
     height: 500px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .liste_menu {
     background-color: #f6f6f6;
@@ -362,4 +339,4 @@ footer p {
   .footer_2 {
     margin-right: 20px;
   }
-} 
+}
