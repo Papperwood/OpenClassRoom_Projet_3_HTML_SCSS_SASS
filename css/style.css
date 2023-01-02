@@ -33,73 +33,6 @@ h1 h2 h3 h4 {
           animation: fill 2s linear infinite alternate;
 }
 
-.loader::after {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 0%;
-  transform: translate(-50%, -95%);
-  border: 2px solid #FFF;
-  border-bottom: none;
-  background: #fff;
-  width: 15px;
-  height: 35px;
-  -webkit-animation: fillNeck 2s linear infinite alternate;
-          animation: fillNeck 2s linear infinite alternate;
-}
-
-@-webkit-keyframes fill {
-  0% {
-    box-shadow: 0 0 inset;
-  }
-  50%, 100% {
-    box-shadow: 0 -98px inset;
-  }
-}
-
-@keyframes fill {
-  0% {
-    box-shadow: 0 0 inset;
-  }
-  50%, 100% {
-    box-shadow: 0 -98px inset;
-  }
-}
-@-webkit-keyframes fillNeck {
-  0%, 50% {
-    box-shadow: 0 0 inset;
-  }
-  100% {
-    box-shadow: 0 -20px inset;
-  }
-}
-@keyframes fillNeck {
-  0%, 50% {
-    box-shadow: 0 0 inset;
-  }
-  100% {
-    box-shadow: 0 -20px inset;
-  }
-}
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-@keyframes fadeout {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
 .lien {
   text-decoration: none;
   color: black;
@@ -529,7 +462,7 @@ footer p {
 }
 @media screen and (min-width: 992px) {
   body {
-    max-width: 1600px;
+    max-width: 1400px;
   }
   header {
     display: flex;
@@ -640,6 +573,7 @@ footer p {
   .restaurants {
     background: rgb(232, 231, 231);
     padding-bottom: 100px;
+    margin-bottom: 20px;
     padding-top: 100px;
     align-items: center;
     width: 100%;
@@ -651,8 +585,8 @@ footer p {
     display: none;
   }
   .carte_restaurants {
-    width: 350px;
-    height: 285px;
+    width: 300px;
+    height: 255px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
