@@ -150,6 +150,12 @@ header {
   transition: 0.4s linear;
 }
 
+.validation {
+  min-width: 60px;
+  transform: translateX(-60px);
+  transition: 0.3s linear;
+}
+
 @-webkit-keyframes slideup {
   0% {
     transform: translatey(20px);

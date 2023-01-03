@@ -147,6 +147,12 @@ header {
   }
 }
 
+.validation{
+  min-width: 60px;
+  transform: translateX(-60px);
+  transition: 0.3s linear;
+}
+
 @keyframes slideup {
   0% {
     transform: translatey(20px);
