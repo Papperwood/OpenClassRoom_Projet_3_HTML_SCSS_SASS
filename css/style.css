@@ -131,6 +131,7 @@ h1 h2 h3 h4 {
 
 .localisateur {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background: #e6e6e6;
@@ -138,6 +139,7 @@ h1 h2 h3 h4 {
 
 .searchbar {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 50px;
@@ -174,7 +176,7 @@ h1 h2 h3 h4 {
   color: white;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(to right, #DA66BA 0%, #844DC5 100%);
+  background: linear-gradient(to right, #da66ba 0%, #844dc5 100%);
   cursor: pointer;
   margin: 30px;
   transition: 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -184,7 +186,7 @@ h1 h2 h3 h4 {
 
 .button:hover {
   box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.54);
-  background: linear-gradient(to right, #FF77DA 0%, #AB64FF 100%);
+  background: linear-gradient(to right, #ff77da 0%, #ab64ff 100%);
 }
 
 .section_2 {
@@ -218,6 +220,7 @@ h1 h2 h3 h4 {
 
 .number {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   color: white;
@@ -294,6 +297,7 @@ h1 h2 h3 h4 {
 
 .nouveau {
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   width: 80px;
@@ -365,6 +369,7 @@ footer p {
     height: 200px;
     text-align: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 4px;
@@ -377,6 +382,7 @@ footer p {
   }
   .localisateur {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -399,6 +405,7 @@ footer p {
   }
   .section_1 {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -449,6 +456,7 @@ footer p {
   }
   .number {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     color: white;
@@ -501,6 +509,7 @@ footer p {
   }
   .nouveau {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     width: 80px;
@@ -542,6 +551,7 @@ footer p {
     width: 500px;
     height: 200px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -555,6 +565,7 @@ footer p {
   }
   .localisateur {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -575,6 +586,7 @@ footer p {
   }
   .section_1 {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse;
@@ -625,6 +637,7 @@ footer p {
   }
   .number {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     color: white;
@@ -677,6 +690,7 @@ footer p {
   }
   .nouveau {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     width: 80px;
