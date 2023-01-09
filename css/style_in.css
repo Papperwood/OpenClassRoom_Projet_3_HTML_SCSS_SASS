@@ -244,8 +244,8 @@ header {
   opacity: 0;
 }
 .Menu-barre:hover .Menu-info {
-  width: calc(100% - 120px);
   transition: 0.3s linear;
+  width: 210px;
 }
 .Menu-barre:hover .price {
   transform: translateX(0px);
@@ -259,12 +259,6 @@ header {
 .Menu-barre:hover .validation i {
   transform: rotate(360deg);
   transition: 0.4s linear;
-}
-
-.validation {
-  min-width: 60px;
-  transform: translateX(-60px);
-  transition: 0.3s linear;
 }
 
 @-webkit-keyframes slideup {
@@ -309,7 +303,7 @@ header {
   align-items: flex-end;
   font-weight: bold;
   margin-bottom: 15px;
-  width: 60px;
+  min-width: 60px;
   transform: translateX(0px);
   transition: 0.3s linear;
 }
@@ -319,6 +313,9 @@ header {
   justify-content: center;
   align-items: center;
   width: 0px;
+  min-width: 60px;
+  transform: translateX(-60px);
+  transition: 0.3s linear;
   font-size: 22px;
   background-color: #99e2d0;
   color: white;
@@ -334,6 +331,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  width: 250px;
   width: calc(100% - 60px);
   margin-left: 8px;
 }
@@ -355,7 +353,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(to right, #DA66BA 0%, #844DC5 100%);
+  background: linear-gradient(to right, #da66ba 0%, #844dc5 100%);
   cursor: pointer;
   margin: 30px;
   transition: 0.2s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -366,7 +364,7 @@ header {
 
 .button:hover {
   box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.54);
-  background: linear-gradient(to right, #FF77DA 0%, #AB64FF 100%);
+  background: linear-gradient(to right, #ff77da 0%, #ab64ff 100%);
 }
 
 .button_menu {
