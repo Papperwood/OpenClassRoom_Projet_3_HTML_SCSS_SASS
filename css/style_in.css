@@ -22,59 +22,6 @@ header {
   padding-left: 10px;
 }
 
-@-webkit-keyframes eapper {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes eapper {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes diseapper {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes diseapper {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.divin {
-  -webkit-animation: eapper 6s;
-          animation: eapper 6s;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.divout {
-  -webkit-animation: diseapper 4s;
-          animation: diseapper 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 @-webkit-keyframes spinner {
   0% {
     transform: rotate(0deg);

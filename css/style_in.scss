@@ -22,39 +22,6 @@ header {
   gap: 55px;
   padding-left: 10px;
 }
-@keyframes eapper {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes diseapper {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.divin {
-  animation: eapper 6s;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.divout {
-  animation: diseapper 4s;
-  animation-fill-mode: forwards;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 @keyframes spinner {
   0% {
