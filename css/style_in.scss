@@ -205,14 +205,14 @@ header {
   &:hover {
     & .Menu-info {
       transition: 0.3s linear;
-      width: 210px;
+      width: calc(100% - 120px);
     }
     & .price {
       transform: translateX(0px);
       transition: 0.3s linear;
     }
     & .validation {
-      min-width: 60px;
+      width: 60px;
       transform: translateX(0px);
       transition: 0.3s linear;
       & i {
@@ -252,7 +252,7 @@ header {
   align-items: flex-end;
   font-weight: bold;
   margin-bottom: 15px;
-  min-width: 60px;
+  width: 60px;
   transform: translateX(0px);
   transition: 0.3s linear;
 }
@@ -262,7 +262,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 0px;
-  min-width: 60px;
   transform: translateX(-60px);
   transition: 0.3s linear;
   font-size: 22px;
@@ -277,10 +276,6 @@ header {
 }
 
 .Menu-info {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  width: 250px;
   width: calc(100% - 60px);
   margin-left: 8px;
   & p {

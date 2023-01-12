@@ -8,11 +8,11 @@
 
 $primaryColor: #ff79da;
 $secondaryColor: #9356dc;
-$TertiaireColor: #99E2D0;
+$TertiaireColor: #99e2d0;
 
 body {
   font-family: "Roboto", sans-serif;
-  width: 100%;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -503,9 +503,6 @@ footer p {
   }
 }
 @media screen and (min-width: 992px) {
-  body {
-    max-width: 1400px;
-  }
   header {
     display: flex;
     align-items: center;
